@@ -86,7 +86,7 @@
 	</extension>
 </addon>
 
-<addon id="script.service.mypicsdb2"  name="MyPicsDB Update Service 2"  version="19.0.0" provider-name="Xycl">
+<addon id="script.service.mypicsdb2"  name="MyPicsDB Update Service 2"  version="19.0.1" provider-name="Xycl">
    <requires>
    	<import addon="xbmc.python" version="3.0.0"/>
   </requires>
