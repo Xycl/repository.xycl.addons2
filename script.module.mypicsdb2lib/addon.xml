@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.mypicsdb2lib" version="19.4.0" name="My Pictures Database Library" provider-name="Xycl">
+	<requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.common.plugin.cache" version="2.6.1"/>
+		<import addon="script.module.myconnpy" version="8.0.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">My Pictures Database Library</summary>
+		<description lang="en_GB">My Pictures Database Library is implementing all methods needed by My Pictures Database.</description>
+		<license>GPLv2</license>
+		<platform>all</platform>
+	</extension>
+</addon>

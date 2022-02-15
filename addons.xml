@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.image.mypicsdb2" version="19.2.2" name="My Pictures Database" provider-name="Xycl | MikeBZH44 | Alexsolex">
+<addon id="plugin.image.mypicsdb2" version="19.4.0" name="My Pictures Database" provider-name="Xycl | MikeBZH44 | Alexsolex">
 	<requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.common.plugin.cache" version="2.6.1"/>
 		<import addon="script.module.myconnpy" version="8.0.0"/>
+		<import addon="script.module.mypicsdb2lib" version="19.4.0"/>
+		<import addon="script.module.mypicsdb2scan" version="19.4.0"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>image</provides>
@@ -87,19 +89,54 @@
 	</extension>
 </addon>
 
-<addon id="script.service.mypicsdb2"  name="MyPicsDB Update Service 2"  version="19.0.5" provider-name="Xycl">
-   <requires>
-   	<import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.service" library="default.py" start="login"></extension>
-  <extension point="xbmc.python.script" library="scan_exec.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language></language>
-    <summary lang="en">Updates MyPicsDB2 Library</summary>
-    <description lang="en">A Service which automatically updates MyPicsDB2 library</description>
-  </extension>
+<addon id="script.module.mypicsdb2lib" version="19.4.0" name="My Pictures Database Library" provider-name="Xycl">
+	<requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.common.plugin.cache" version="2.6.1"/>
+		<import addon="script.module.myconnpy" version="8.0.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">My Pictures Database Library</summary>
+		<description lang="en_GB">My Pictures Database Library is implementing all methods needed by My Pictures Database.</description>
+		<license>GPLv2</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.mypicsdb2scan" version="19.4.0" name="My Pictures Database Library" provider-name="Xycl">
+	<requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.common.plugin.cache" version="2.6.1"/>
+		<import addon="script.module.myconnpy" version="8.0.0"/>
+		<import addon="script.module.mypicsdb2lib" version="19.4.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.python.script" library="scanpath.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">My Pictures Database Library</summary>
+		<description lang="en_GB">My Pictures Database Library is implementing all methods needed by My Pictures Database.</description>
+		<license>GPLv2</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.service.mypicsdb2"  name="MyPicsDB Update Service 2"  version="19.4.0" provider-name="Xycl">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.myconnpy" version="8.0.0"/>
+		<import addon="script.module.mypicsdb2lib" version="19.4.0"/>
+		<import addon="script.module.mypicsdb2scan" version="19.4.0"/>
+	</requires>
+	<extension point="xbmc.service" library="default.py" start="login"></extension>
+	<extension point="xbmc.python.script" library="scan_exec.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<language></language>
+		<summary lang="en">Updates MyPicsDB2 Library</summary>
+		<description lang="en">A Service which automatically updates MyPicsDB2 library</description>
+	</extension>
 </addon>
 </addons>
