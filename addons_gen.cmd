@@ -1,4 +1,1 @@
-copy ..\plugin.image.mypicsdb2\addon.xml plugin.image.mypicsdb2
-copy ..\script.service.mypicsdb2\addon.xml script.service.mypicsdb2
-
-"C:\Program Files\Python39\python.exe" addons_gen.py
+"C:\Program Files\Python39\python.exe" create_repo.py C:\Repositories\Git\GitHub-Master\Matrix\plugin.image.mypicsdb2 C:\Repositories\Git\GitHub-Master\Matrix\script.module.mypicsdb2lib C:\Repositories\Git\GitHub-Master\Matrix\script.module.mypicsdb2scan C:\Repositories\Git\GitHub-Master\Matrix\script.service.mypicsdb2
