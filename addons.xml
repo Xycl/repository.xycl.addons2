@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.image.mypicsdb2" version="19.4.2" name="My Pictures Database" provider-name="Xycl">
+<addons><addon id="plugin.image.mypicsdb2" version="19.4.3" name="My Pictures Database" provider-name="Xycl">
 	<requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.common.plugin.cache" version="2.6.1" />
@@ -73,7 +73,7 @@ Potom budete môcť usporiadať svoje obrázky podľa dňa/mesiaca/roku, kľúč
             <fanart>fanart.jpg</fanart>
         </assets>
 </extension>
-</addon><addon id="script.module.mypicsdb2lib" version="19.4.0" name="My Pictures Database Library" provider-name="Xycl">
+</addon><addon id="script.module.mypicsdb2lib" version="19.4.1" name="My Pictures Database Library" provider-name="Xycl">
 	<requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.common.plugin.cache" version="2.6.1" />
