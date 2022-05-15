@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.mypicsdb2lib" version="19.4.1" name="My Pictures Database Library" provider-name="Xycl">
+<addon id="script.module.mypicsdb2lib" version="19.4.3" name="My Pictures Database Library" provider-name="Xycl">
 	<requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.common.plugin.cache" version="2.6.1"/>
