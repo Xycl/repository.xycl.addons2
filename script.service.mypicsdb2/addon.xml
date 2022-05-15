@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.service.mypicsdb2"  name="MyPicsDB Update Service 2"  version="19.4.0" provider-name="Xycl">
+<addon id="script.service.mypicsdb2"  name="MyPicsDB Update Service 2"  version="19.4.1" provider-name="Xycl">
    <requires>
    	<import addon="xbmc.python" version="3.0.0"/>
+     <import addon="script.module.myconnpy" version="8.0.0"/>
+     <import addon="script.module.mypicsdb2lib" version="19.4.0"/>
+     <import addon="script.module.mypicsdb2scan" version="19.4.0"/>
   </requires>
   <extension point="xbmc.service" library="default.py" start="login"></extension>
   <extension point="xbmc.python.script" library="scan_exec.py">
